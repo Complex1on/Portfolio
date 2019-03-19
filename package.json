@@ -3,12 +3,15 @@
   "version": "1.0.0",
   "description": "Yipman's Portfolio",
   "main": "index.js",
+  "homepage": "https://complex1on.github.io/Portfolio/",
   "scripts": {
-    "sass": "node-sass -w scss/ -o public/css/ --recursive"
+    "sass": "node-sass -w scss/ -o public/css/ --recursive",
+    "deploy": "gh-pages -d public"
   },
   "author": "Evan Yip",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0"
   }
 }
