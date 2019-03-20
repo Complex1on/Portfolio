@@ -5,10 +5,16 @@
   top: 35px;
   cursor: pointer;
   transition: all 0.75s ease-out; }
+  .menu-btn:hover:nth-child(1) {
+    background: #7da3a1; }
+  .menu-btn:hover:nth-child(2) {
+    background: #7da3a1; }
+  .menu-btn:hover:nth-child(3) {
+    background: #7da3a1; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
-    margin: 0 0 5px 0;
+    margin: 5px 5px 5px 5px;
     background: #fff;
     transition: all 0.75s ease-out; }
   .menu-btn.close {
@@ -19,6 +25,12 @@
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(135deg) translate(-6px, 6px); }
+    .menu-btn.close:hover:nth-child(1) {
+      background: #c71111; }
+    .menu-btn.close:hover:nth-child(2) {
+      background: #c71111; }
+    .menu-btn.close:hover:nth-child(3) {
+      background: #c71111; }
 
 .menu {
   position: fixed;
@@ -62,6 +74,8 @@
     transition: all 0.75s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
+    .menu .nav-item.current > a {
+      color: #7da3a1; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -134,7 +148,8 @@ a {
 header {
   position: fixed;
   z-index: 2;
-  width: 100%; }
+  width: 100%;
+  display: grid; }
 
 .text-secondary {
   color: #7da3a1; }
@@ -206,7 +221,8 @@ main {
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #7da3a1;
-    color: #000; }
+    color: #000;
+    transition: all 0.75s ease-out; }
 
 .btn-dark {
   background: black;
