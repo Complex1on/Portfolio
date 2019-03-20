@@ -17,3 +17,5 @@ function toggleMenu() {
   navItems.forEach(item => item.classList.toggle("show"));
   showMenu = !showMenu;
 }
+
+const imgselect = document.querySelector(".img-select");

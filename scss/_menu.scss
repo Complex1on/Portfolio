@@ -8,10 +8,24 @@
   cursor: pointer;
   @include easeout;
 
+  &:hover {
+    &:nth-child(1) {
+      background: $secondary-color;
+    }
+    //line 2
+    &:nth-child(2) {
+      background: $secondary-color;
+    }
+    //line 3
+    &:nth-child(3) {
+      background: $secondary-color;
+    }
+  }
+
   .btn-line {
     width: 28px;
     height: 3px;
-    margin: 0 0 5px 0;
+    margin: 5px 5px 5px 5px;
     background: set-text-color($primary-color);
     @include easeout;
   }
@@ -23,13 +37,26 @@
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
-
+      //line 2
       &:nth-child(2) {
         opacity: 0;
       }
-
+      //line 3
       &:nth-child(3) {
         transform: rotate(135deg) translate(-6px, 6px);
+      }
+    }
+    &:hover {
+      &:nth-child(1) {
+        background: rgb(199, 17, 17);
+      }
+      //line 2
+      &:nth-child(2) {
+        background: rgb(199, 17, 17);
+      }
+      //line 3
+      &:nth-child(3) {
+        background: rgb(199, 17, 17);
       }
     }
   }
@@ -98,6 +125,10 @@
     &.show {
       //slide in from right
       transform: translate3d(0, 0, 0);
+    }
+
+    &.current > a {
+      color: $secondary-color;
     }
   }
 
